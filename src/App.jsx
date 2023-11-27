@@ -15,4 +15,6 @@ function App() {
   );
 }
 
+// Just a comment
+
 export default App;
