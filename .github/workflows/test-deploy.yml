@@ -51,5 +51,7 @@ jobs:
           name: dist-files
       - name: Output contents
         run: ls
+      - name: Output filename
+        run: echo "${ needs.build.outputs.script-file }}" # needs is another context object -> contains information about the jobs this job depends on
       - name: Deploy
         run: echo "Deploying"
